@@ -1,6 +1,6 @@
 ---
 title: Quantum Panama Canal
-date: 2025-26-03 11:21:00 +/-0000
+date: 2025-26-03 10:21:00 + 0100
 categories: [Quantum Annealing, QUBO]
 tags: [qubo, annealing, sustainability]     # TAG names should always be lowercase
 author: <author_id:1>
@@ -128,12 +128,13 @@ The Quantum Adiabatic Algorithm is employed to solve the QUBO problem. The syste
 
 A sample pseudocode snippet for the pulse is:
 
-python
+'''python
 adiabatic_pulse = Pulse(
     InterpolatedWaveform(T, [1e-9, Omega, 1e-9]),
     InterpolatedWaveform(T, [delta_0, 0, delta_f]),
     0
 )
+'''
 
 
 ## Simulation and Experimental Results
@@ -201,7 +202,7 @@ Future directions include:
 
 A roadmap diagram is provided below using Mermaid:
 
-mermaid
+'''mermaid
 flowchart TD
     A[Start: Research & Conceptualization]
     B[Develop QUBO Model]
@@ -219,6 +220,7 @@ flowchart TD
     E --> F
     F --> G
     G --> H
+'''
 
 ## Conclusion
 
