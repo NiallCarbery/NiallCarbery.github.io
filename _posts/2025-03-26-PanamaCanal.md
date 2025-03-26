@@ -5,7 +5,7 @@ categories: [Quantum Annealing, QUBO]
 tags: [qubo, annealing, sustainability]     # TAG names should always be lowercase
 author: <author_id:1>
 description: Summary of quantum canal water savinf algorithim
-media_subpath: /assets/posts/2025-03-26-PanamaCanal
+media_subpath: /assets/img/posts/2025-03-26-PanamaCanal
 math: true
 mermaid: true
 ---
@@ -28,11 +28,11 @@ The Panama Canal is a vital maritime route that shortens shipping distances betw
   Traditional operations involve sequential lockages that consume vast amounts of water. The proposed solution rethinks this process by allowing multiple ships (via tandem lockages and cross-filling) to transit concurrently under optimized schedules.
 
 > **Figure 1 from the Document:**  
-> ![Figure 1. Panama Canal Lock Standards](/Figure1_Panama_Canal_Lock_Standards)  
+> ![Figure 1. Panama Canal Lock Standards](/Figure1_Panama_Canal_Lock_Standards.png)  
 > _Figure 1. Panama Canal Lock Standards (Image by Wikimedia Commons contributors, 2016, via Wikimedia Commons "Ship measurements comparison")._
 
 > **Figure 2 from the Document:**  
-> ![Figure 2. Cross filling the Miraflores locks](/Figure2_Cross_Filling_Miraflores_Locks)  
+> ![Figure 2. Cross filling the Miraflores locks](/Figure2_Cross_Filling_Miraflores_Locks.png)  
 > _Figure 2. Cross filling the Miraflores locks (Image by Scope of Work, 2025, via Scope of Work, "Panamaximization")._
 
 ## Theoretical Foundations
@@ -68,11 +68,11 @@ H(s) = (1-s) H_0 + s H_P, \quad s=\frac{t}{T}, \quad t\in[0,T]
 Neutral atom quantum computers provide an analog platform where each atom acts as a qubit. Control parameters like the Rabi frequency \(\Omega(t)\) and detuning \(\delta(t)\) steer the system toward the ground state.
 
 > **Figure 3 from the Document:**  
-> ![Figure 3. Neutral Atom Rydberg Radius Implementation](/Figure3_Neutral_Atom_Rydberg_Radius)  
+> ![Figure 3. Neutral Atom Rydberg Radius Implementation](/Figure3_Neutral_Atom_Rydberg_Radius.png)  
 > _Figure 3. Neutral Atom Rydberg Radius Implementation (Image by Pasqal)._
 
 > **Figure 4 from the Document:**  
-> ![Figure 4. Neutral Atom Quantum Computer](/Figure4_Neutral_Atom_Quantum_Computer)  
+> ![Figure 4. Neutral Atom Quantum Computer](/Figure4_Neutral_Atom_Quantum_Computer.png)  
 > _Figure 4. Neutral Atom Quantum Computer (Image by Pasqal)._
 
 ## Mathematical Formulation of the Scheduling Problem
@@ -113,7 +113,7 @@ The overall Hamiltonian comprises several components:
    \]
 
 > **Figure 6 from the Document:**  
-> ![Figure 6. Pulse configuration for 2 ship 2 time slot QUBO](/Figure6_Pulse_Configuration)  
+> ![Figure 6. Pulse configuration for 2 ship 2 time slot QUBO](/Figure6_Pulse_Configuration.png)  
 > _Figure 6. Pulse configuration for 2 ship 2 time slot QUBO._
 
 ## Quantum Computing Integration & Feasibility
@@ -146,15 +146,15 @@ Classical simulated annealing (SA) experiments demonstrated that:
 - **Computational Efficiency:** SA converges to near-optimal solutions faster than traditional methods.
 
 > **Figure 7 from the Document:**  
-> ![Figure 7. Water Cost vs Instance Size](/Figure7_Water_Cost_vs_Instance_Size)  
+> ![Figure 7. Water Cost vs Instance Size](/Figure7_Water_Cost_vs_Instance_Size.png)  
 > _Figure 7. Water Cost vs Instance Size._
 
 > **Figure 8 from the Document:**  
-> ![Figure 8. Percentage of Water vs Instance Size](/Figure8_Percentage_of_Water_vs_Instance_Size)  
+> ![Figure 8. Percentage of Water vs Instance Size](/Figure8_Percentage_of_Water_vs_Instance_Size.png)  
 > _Figure 8. Percentage of Water vs Instance Size._
 
 > **Figure 9 from the Document:**  
-> ![Figure 9. Time for Simulated Annealing vs. Classical](/Figure9_Time_for_SA_vs_Classical)  
+> ![Figure 9. Time for Simulated Annealing vs. Classical](/Figure9_Time_for_SA_vs_Classical.png)  
 > _Figure 9. Time for Simulated Annealing vs. Classical Optimization Methods._
 
 ### Quantum Annealing (QAA) Results
@@ -165,15 +165,15 @@ QAA experiments on a neutral atom quantum processor confirmed:
 - **Scalability Challenges:** Embedding time increases with qubit count.
 
 > **Figure 10 from the Document:**  
-> ![Figure 10. Embedding used for 4 qubit Results](/Figure10_Embedding_4Qubit)  
+> ![Figure 10. Embedding used for 4 qubit Results](/Figure10_Embedding_4Qubit.png)  
 > _Figure 10. Embedding used for 4 qubit Results._
 
 > **Figure 12 from the Document:**  
-> ![Figure 12. Pulse Used for 4 qubit](/Figure12_Pulse_4Qubit)  
+> ![Figure 12. Pulse Used for 4 qubit](/Figure12_Pulse_4Qubit.png)  
 > _Figure 12. Pulse Used for 4 qubit QAA Experiment._
 
 > **Figure 13 from the Document:**  
-> ![Figure 13. Time Evolution of Hamiltonian Cost](/Figure13_Time_Evolution_Hamiltonian_Cost)  
+> ![Figure 13. Time Evolution of Hamiltonian Cost](/Figure13_Time_Evolution_Hamiltonian_Cost.png)  
 > _Figure 13. Time Evolution of Hamiltonian Cost during QAA._
 
 ## Sustainability Benefits & Future Work
