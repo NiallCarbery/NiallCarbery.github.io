@@ -5,7 +5,7 @@ categories: [Quantum Annealing, QUBO]
 tags: [qubo, annealing, sustainability]     # TAG names should always be lowercase
 author: <author_id:1>
 description: Summary of quantum canal water savinf algorithim
-media_subpath: /assets/posts/2025-03-036-PanamaCanal
+media_subpath: /assets/posts/2025-03-26-PanamaCanal
 math: true
 mermaid: true
 ---
