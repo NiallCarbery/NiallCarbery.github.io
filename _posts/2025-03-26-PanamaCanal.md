@@ -1,7 +1,7 @@
 ---
 title: Quantum Panama Canal
 date: 2025-03-26 10:21:00 +0100
-categories: [Quantum Annealing, QUBO]
+categories: [Quantum Computing, QUBO]
 tags: [qubo, annealing, sustainability]     # TAG names should always be lowercase
 author: <author_id:1>
 description: Summary of quantum canal water saving algorithim
