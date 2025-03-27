@@ -119,10 +119,10 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: "NiallCarbery/NiallCarbery.github.io"
-    repo_id: "R_kgDOOO9aOQ"
-    category: "Q&A"
-    category_id: "DIC_kwDOOO9aOc4Cohw2"
+    repo: NiallCarbery/NiallCarbery.github.io
+    repo_id: R_kgDOOO9aOQ
+    category: Q&A
+    category_id: DIC_kwDOOO9aOc4Cohw2
     mapping: # optional, default to 'pathname'
     strict: # optional, default to '0'
     input_position: # optional, default to 'bottom'
