@@ -8,12 +8,10 @@ description: Summary of quantum canal water saving algorithim
 media_subpath: /assets/img/posts/2025-03-26-PanamaCanal
 math: true
 mermaid: true
+pin: true
 ---
 
 # Optimizing the Panama Canal: A Quantum Approach to Water-Saving Ship Scheduling
-
-**Summary:**  
-This blog post explores a groundbreaking study that addresses water scarcity at the Panama Canal through an optimized ship scheduling system. By leveraging a Quadratic Unconstrained Binary Optimization (QUBO) framework and advanced quantum computing methods—including quantum annealing and simulated annealing—the project demonstrates how water-saving measures such as cross-filling, tandem lockages, and innovative scheduling can reduce freshwater consumption by up to 40%. We dive into the mathematical formulation, quantum integration, simulation results, and discuss the sustainability, economic, and environmental benefits of this approach.
 
 ## Introduction
 
@@ -44,11 +42,11 @@ $$
 f_Q(x) = x^T Q x = \sum_{i=1}^{n}\sum_{j=i}^{n} Q_{ij} x_i x_j \quad \forall x \in \{0,1\}^n
 $$
 
-Here, \(Q\) is the matrix that encodes both the rewards (benefits of scheduling a ship) and penalties (water usage and infeasibility constraints).
+Here, $Q$ is the matrix that encodes both the rewards (benefits of scheduling a ship) and penalties (water usage and infeasibility constraints).
 
 ### Mapping to Ising Models
 
-QUBO problems are mapped to Ising models by transforming binary variables \(x\) into spin variables \(\sigma\) using \( \sigma = 2x - 1 \). This yields an Ising Hamiltonian:
+QUBO problems are mapped to Ising models by transforming binary variables $x$ into spin variables $\sigma$ using $\sigma = 2x - 1$. This yields an Ising Hamiltonian:
 
 $$
 H = \sum_{i,j} J_{ij} \sigma_i \sigma_j + \sum_i h_i \sigma_i
@@ -58,13 +56,13 @@ This mapping is critical for leveraging quantum annealing techniques.
 
 ### Quantum Annealing and Neutral Atom Quantum Computers
 
-Quantum annealing is used to find the minimum-energy solution by evolving the system from an initial Hamiltonian \(H_0\) to the problem Hamiltonian \(H_P\) following:
+Quantum annealing is used to find the minimum-energy solution by evolving the system from an initial Hamiltonian $H_0$ to the problem Hamiltonian $H_P$ following:
 
 $$
 H(s) = (1-s) H_0 + s H_P, \quad s=\frac{t}{T}, \quad t\in[0,T]
 $$
 
-Neutral atom quantum computers provide an analog platform where each atom acts as a qubit. Control parameters like the Rabi frequency \(\Omega(t)\) and detuning \(\delta(t)\) steer the system toward the ground state.
+Neutral atom quantum computers provide an analog platform where each atom acts as a qubit. Control parameters like the Rabi frequency $\Omega(t)$ and detuning $\delta(t)$ steer the system toward the ground state.
 
  ![Figure 3. Neutral Atom Rydberg Radius Implementation](/Figure3_Neutral_Atom_Rydberg_Radius.png)  
  _Figure 3. Neutral Atom Rydberg Radius Implementation (Image by Pasqal)._
@@ -74,7 +72,7 @@ Neutral atom quantum computers provide an analog platform where each atom acts a
 
 ## Mathematical Formulation of the Scheduling Problem
 
-The scheduling problem involves assigning \(N\) ships to \(T\) time slots. We define the binary variable:
+The scheduling problem involves assigning $N$ ships to $T$ time slots. We define the binary variable:
 
 $$
 x_{i,t} = \begin{cases} 
@@ -116,7 +114,7 @@ _Figure 6. Pulse configuration for 2 ship 2 time slot QUBO._
 
 ### Quantum Adiabatic Algorithm (QAA)
 
-The Quantum Adiabatic Algorithm is employed to solve the QUBO problem. The system is initialized in the ground state of \(H_0\) and evolved slowly to \(H_P\) using a tailored adiabatic pulse. The evolution adheres to the boundary conditions:
+The Quantum Adiabatic Algorithm is employed to solve the QUBO problem. The system is initialized in the ground state of $H_0$ and evolved slowly to $H_P$ using a tailored adiabatic pulse. The evolution adheres to the boundary conditions:
 
 $$
 \Omega(0) = 0, \quad \Omega(T) = 0, \quad \delta(0) < 0, \quad \delta(T)  0.
