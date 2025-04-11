@@ -31,12 +31,12 @@ The numerical model is founded on the rate equations that govern the populations
 The core rate equations have been normalized using dimensionless variables. These equations take into account:
 
 - **Electron State Densities:**  
-  - $ n_1 $ for the lower energy state
-  - $ n_2 $ for the excited state
+  - $$ n_1 $$ for the lower energy state
+  - $$ n_2 $$ for the excited state
 - **Lasing Mode Energy Density:**  
-  - $ w $, proportional to the photon density within the resonator.
-- **Pump Rate $ r $:**  
-  - A normalized measure of the pumping strength relative to the threshold pump rate $ R_c $.
+  - $$ w $$, proportional to the photon density within the resonator.
+- **Pump Rate $$ r $$:**  
+  - A normalized measure of the pumping strength relative to the threshold pump rate $$ R_c $$.
 
 The essential rate equations in dimensionless form are as follows:
 
@@ -52,13 +52,13 @@ $$
 \frac{dw}{dt} = \left( \frac{A'_{21}}{A_{21}} \right) n_2 + w (n_2 - n_1) \frac{1 - t_1}{t_0} - \frac{w}{t_0}
 $$
 
-Here, $ t_1 $ and $ t_0 $ are dimensionless scaling parameters related to the electron lifetime in specific states and the photon lifetime in the cavity, respectively. The ratio $ A'_{21}/A_{21} $ reflects the relative contribution of spontaneous emission into the lasing mode.
+Here, $$ t_1 $$ and $$ t_0 $$ are dimensionless scaling parameters related to the electron lifetime in specific states and the photon lifetime in the cavity, respectively. The ratio $$ A'_{21}/A_{21} $$ reflects the relative contribution of spontaneous emission into the lasing mode.
 
 ### Numerical Integration Using Runge-Kutta
 
 Because these coupled differential equations describe a non-linear dynamical system, the simulation implements a fourth-order Runge-Kutta (RK4) method for numerical integration. This method was chosen due to its balance between computational efficiency and high accuracy when modeling transient and steady-state phenomena.
 
-The integration proceeds over a time domain long enough to observe the evolution of the electron populations and the build-up of the photon density. Different values of the pump rate $ r $ are applied to determine how the system transitions from non-lasing to lasing behavior.
+The integration proceeds over a time domain long enough to observe the evolution of the electron populations and the build-up of the photon density. Different values of the pump rate $$ r $$ are applied to determine how the system transitions from non-lasing to lasing behavior.
 
 ---
 
@@ -69,20 +69,20 @@ The integration proceeds over a time domain long enough to observe the evolution
 The simulation was implemented in Python, where the dimensionless rate equations were discretized and then solved using the RK4 integration technique. The key steps include:
 
 1. **Initialization:**  
-   The initial conditions for $ n_1 $, $ n_2 $, and $ w $ were set to zero, representing a system at rest before the application of a pump.
+   The initial conditions for $$ n_1 $$, $$ n_2 $$, and $$ w $$ were set to zero, representing a system at rest before the application of a pump.
 
 2. **Integration:**  
    A loop iterates over the time domain, applying the RK4 method at each step to update the state variables. This approach captures the rapid transient dynamics as well as the later steady-state behavior of the system.
 
 3. **Variation of Pump Rate:**  
-   Simulations were run for different pump rates. For pump rates below the threshold value ($ r < 1 $), spontaneous emission dominates and the photon density remains low. Once the pump rate exceeds the threshold ($ r \geq 1 $), the energy in the lasing mode increases significantly.
+   Simulations were run for different pump rates. For pump rates below the threshold value ($$ r < 1 $$), spontaneous emission dominates and the photon density remains low. Once the pump rate exceeds the threshold ($$ r \geq 1 $$), the energy in the lasing mode increases significantly.
 
 ### Data Analysis and Visualization
 
 The simulation output includes:
 
 - **Time Series Plots:**  
-  These graphs demonstrate the evolution of electron populations in energy states $ n_1 $ and $ n_2 $, as well as the associated photon density $ w $, over time.
+  These graphs demonstrate the evolution of electron populations in energy states $$ n_1 $$ and $$ n_2 $$, as well as the associated photon density $$ w $$, over time.
   
 - **Pump Rate vs. Photon Density:**  
   The photon density is plotted against varying pump rates to identify the threshold at which population inversion occurs and stable lasing is achieved.
@@ -97,11 +97,11 @@ The numerical results validate that, beyond the critical pump rate, the photon d
 
 The numerical simulation clearly shows two distinct regimes:
 
-- **Sub-Threshold Pumping ($ r < 1 $):**  
+- **Sub-Threshold Pumping ($$ r < 1 $$):**  
   The energy in the lasing mode remains negligible, with electron transitions occurring primarily through spontaneous processes. No significant buildup in photon density is observed.
 
-- **Above-Threshold Pumping ($ r \geq 1 $):**  
-  Once the pump rate exceeds the critical threshold, the simulation indicates a dramatic increase in the photon density. The system transitions from a non-lasing state to a stable lasing state, marked by a positive population inversion where $ n_2 > n_1 $.
+- **Above-Threshold Pumping ($$ r \geq 1 $$):**  
+  Once the pump rate exceeds the critical threshold, the simulation indicates a dramatic increase in the photon density. The system transitions from a non-lasing state to a stable lasing state, marked by a positive population inversion where $$ n_2 > n_1 $$.
 
 ### Quantitative Trends
 

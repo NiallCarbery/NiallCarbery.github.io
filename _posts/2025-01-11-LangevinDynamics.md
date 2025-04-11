@@ -36,10 +36,10 @@ M \ddot{X} = -\nabla U(X) - \gamma M \dot{X} + \sqrt{2M\gamma k_BT} \, R(t)
 $$
 
 where:
-- $ U(X) $ is the potential energy (here modeled by the Leonard-Jones potential).
-- $ \gamma $ is the damping coefficient.
-- $ R(t) $ represents Gaussian white noise (zero mean).
-- $ k_B $ and $ T $ are Boltzmann’s constant and temperature, respectively.
+- $$ U(X) $$ is the potential energy (here modeled by the Leonard-Jones potential).
+- $$ \gamma $$ is the damping coefficient.
+- $$ R(t) $$ represents Gaussian white noise (zero mean).
+- $$ k_B $$ and $$ T $$ are Boltzmann’s constant and temperature, respectively.
 
 This formulation allows us to simulate the complex interplay between deterministic and stochastic influences on the particle’s motion.
 
@@ -54,7 +54,7 @@ $$
 Key insights from its form include:
 - A **repulsive** component at very short distances.
 - An **attractive** component at intermediate distances.
-- A clear minimum at the equilibrium separation (around $ r=1 $ for $ \epsilon, \sigma = 1 $), where the force between particles is balanced.
+- A clear minimum at the equilibrium separation (around $$ r=1 $$ for $$ \epsilon, \sigma = 1 $$), where the force between particles is balanced.
 
 ### Velocity Verlet Algorithm
 
@@ -76,13 +76,13 @@ This scheme minimizes the error associated with discretizing the equations of mo
 
 ### Potential of Mean Force
 
-The **potential of mean force (PMF)** is a concept used to understand how the free energy of a system varies with particle position. The PMF is related to the probability density $ p(r) $ of finding the particle at a position $ r $ by:
+The **potential of mean force (PMF)** is a concept used to understand how the free energy of a system varies with particle position. The PMF is related to the probability density $$ p(r) $$ of finding the particle at a position $$ r $$ by:
 
 $$
 U_{PMF}(r) = -k_BT \ln(1 + h(r))
 $$
 
-where $ h(r) $ represents deviations from an ideal gas distribution. In the simulation, the PMF helps to capture both the underlying deterministic potential and the perturbations due to thermal noise.
+where $$ h(r) $$ represents deviations from an ideal gas distribution. In the simulation, the PMF helps to capture both the underlying deterministic potential and the perturbations due to thermal noise.
 
 ### Equipartition and Thermal Equilibrium
 
@@ -99,9 +99,9 @@ This relationship was verified by analyzing the velocity histograms, which, when
 ## Simulation Methods and Implementation
 
 The simulation was carried out with the following key parameters:
-- **Time step ($ \Delta t $)**: 0.001
+- **Time step ($$ \Delta t $$)**: 0.001
 - **Number of steps**: 100,000 per run
-- **Damping coefficient ($ \gamma $)**: Varied to assess its influence on particle behavior.
+- **Damping coefficient ($$ \gamma $$)**: Varied to assess its influence on particle behavior.
 - **Initial conditions**: Set for position and velocity to observe the evolution toward equilibrium.
 
 ### Data Collection
@@ -112,10 +112,10 @@ The simulation was carried out with the following key parameters:
 ### Impact of Damping
 
 An interesting part of the lab was analyzing how the damping coefficient affects the sampling:
-- **Lower damping ($ \gamma $ close to zero)** results in broader exploration of the potential energy surface, as the particle retains higher kinetic energy.
+- **Lower damping ($$ \gamma $$ close to zero)** results in broader exploration of the potential energy surface, as the particle retains higher kinetic energy.
 - **Higher damping values** lead to more localized behavior around the potential minimum, as the particle loses energy more quickly.
 
-A square root dependency of the time spent in the potential well on $ \gamma $ was observed, aligning with theoretical predictions.
+A square root dependency of the time spent in the potential well on $$ \gamma $$ was observed, aligning with theoretical predictions.
 
 ---
 
@@ -137,9 +137,9 @@ By averaging over 100 runs:
 
 ### Damping Coefficient Effects
 
-The study clearly illustrated how varying $ \gamma $ modulates particle dynamics:
-- **Low $ \gamma $**: The system explores a broader region of the potential, sampling higher energy states.
-- **High $ \gamma $**: The particle is more confined, leading to finer, localized sampling near the potential minimum.
+The study clearly illustrated how varying $$ \gamma $$ modulates particle dynamics:
+- **Low $$ \gamma $$**: The system explores a broader region of the potential, sampling higher energy states.
+- **High $$ \gamma $$**: The particle is more confined, leading to finer, localized sampling near the potential minimum.
 
 This tunability is crucial for applications in data sampling and machine learning, where controlling the breadth of the data distribution is important.
 
@@ -150,7 +150,7 @@ This tunability is crucial for applications in data sampling and machine learnin
 The lab successfully demonstrated the use of Langevin Dynamics in modeling particle motion under combined deterministic and stochastic forces. Key takeaways include:
 - The **velocity Verlet algorithm** is highly effective for integrating the equations of motion in a system influenced by thermal fluctuations.
 - The **Leonard-Jones potential** provides a meaningful framework for understanding interparticle interactions, with clear implications for equilibrium properties.
-- Varying the damping coefficient $ \gamma $ can significantly influence the sampling of the energy landscape—a feature that can be exploited in data sampling and machine learning.
+- Varying the damping coefficient $$ \gamma $$ can significantly influence the sampling of the energy landscape—a feature that can be exploited in data sampling and machine learning.
 
 By integrating theory with simulation, this lab not only reinforced fundamental concepts in molecular dynamics but also highlighted the practical utility of Langevin Dynamics in exploring and sampling complex systems.
 
