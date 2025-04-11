@@ -5,7 +5,6 @@ categories: [Quantum Mechanics, Population Inversion]
 tags: [lab, simulation]     # TAG names should always be lowercase
 author: <author_id>
 description: Numerical Simulations of Population Inversion Parameters.  
-media_subpath: /assets/img/posts/2025-02-11-PopulationInversion
 math: true
 ---
 
@@ -136,7 +135,6 @@ This study reinforces the significance of population inversion in laser systems 
 2. Kapon, E. (1999). *Semiconductor Lasers I*. Academic Press.
 3. Karl, A. (2021). Schematic representation of transitions in three-level and four-level laser systems. [ResearchGate](https://www.researchgate.net/figure/Schematic-representation-of-the-transitions-in-three-level-laser-system-left-and-in-a_fig5_354089585)
 4. Lippi, G. L., Mørk, J., & Puccioni, G. P. (2018). Numerical solutions to the Laser Rate Equations with noise. In *Proceedings of SPIE*.
-5. Nave, R. (2023). *Auger Effect*. [HyperPhysics](http://hyperphysics.phy-astr.gsu.edu/hbase/Atomic/auger.html)
 
 ---
 

@@ -5,7 +5,6 @@ categories: [Quantum Mechanics, Langevin Dynamics]
 tags: [lab, simulation]     # TAG names should always be lowercase
 author: <author_id>
 description: Numerical Simulations of Langevin Dynamics.  
-media_subpath: /assets/img/posts/2025-02-11-PopulationInversion
 math: true
 ---
 
