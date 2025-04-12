@@ -3,7 +3,7 @@ title: Population Inversion & Laser Action
 date: 2025-02-11 20:21:00 +0100
 categories: [Quantum Mechanics, Population Inversion]
 tags: [lab, simulation]     # TAG names should always be lowercase
-author: <author_id>
+author: Niall
 description: Numerical Simulations of Population Inversion Parameters.  
 math: true
 ---

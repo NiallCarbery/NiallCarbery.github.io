@@ -3,7 +3,7 @@ title: Langevin Dynamics & Data Sampling
 date: 2025-02-11 20:21:00 +0100
 categories: [Quantum Mechanics, Langevin Dynamics]
 tags: [lab, simulation]     # TAG names should always be lowercase
-author: <author_id>
+author: Niall
 description: Numerical Simulations of Langevin Dynamics.  
 math: true
 ---
