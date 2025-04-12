@@ -150,7 +150,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "niallcarbery.github.io"
+baseurl: ""
 
 www:
   type: CNAME
