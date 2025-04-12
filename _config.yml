@@ -150,11 +150,16 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl: "niallcarbery.github.io"
 
 www:
   type: CNAME
   value: niallcarbery.github.io
+
+google:
+  tag_manager:
+    container_id: G-SP47HT4Q36  # replace with your actual container ID
+
 
 # ------------ The following options are not recommended to be modified ------------------
 
